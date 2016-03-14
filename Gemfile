@@ -19,6 +19,7 @@ gem 'compass-rails', github: 'Compass/compass-rails', branch: '2-0-stable'
 gem 'bootstrap-sass'
 gem 'execjs'
 gem "railties"
+gem 'rails_12factor'
 
 group :test do
   gem 'rspec-rails'
