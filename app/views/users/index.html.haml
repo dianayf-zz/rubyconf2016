@@ -1,0 +1,33 @@
+%section.email-form
+  .container
+    .row
+      .col-xs-12.text-center
+        %img{src:"/assets/logo.png"}
+      .col-xs-12.text-center
+        %h1.title1 DANCE WITH US, RUBYCONF COLOMBIA
+        %h1.title2 MEDELLIN, COLOMBIA | SEPTEMBER, 2016
+
+      .col-xs-12.col-sm-6.col-sm-offset-3
+        = simple_form_for @user, url: {action: 'create'} do |f|
+          .form-inputs
+            %label Suscribe us for all the news about the event!
+            .btn-email= f.email_field :email, required: true, placeholder: "Write your mail address", class:"form-control"
+            =f.submit
+            %a{class: "btn btn-default", type: "submit", name: "submit"}
+              %span.glyphicon.glyphicon-send
+            
+              
+            %p#notice= notice
+      .col-xs-12.text-center
+        %h1.title3 THE EVENT STARTS IN
+        %ul.list-inline
+          %li
+            %h4 74
+            %span DAYS
+          %li
+            %h4 17
+            %span HOURS
+          %li
+            %h4 23
+            %span MINUTES
+

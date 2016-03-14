@@ -1,0 +1,67 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width:1px) {
+  section.email-form {
+    background: url("/assets/rubyConf_background.png");
+    h1,h2,h3,h4,h5,h6,p,span,label {
+      color: #FFFFFF;
+      font-family: 'Lato', sans-serif;
+    }
+    h1 {
+      &.title1 {
+        font-weight: 100;
+      }
+ 
+      &.title2 {
+        font-weight: 300;
+      }
+
+      &.title3 {
+        font-weight: 100;
+        font-size: 14px;
+        word-spacing: 2px;
+      }
+    }
+    .list-inline {
+      h4 {
+        font-weight: 900;
+        font-size: 36px;
+      }
+      span {
+        font-weight: 100;
+      }
+    }
+    .btn-email {
+      input {
+        background: transparent;
+        border: 1px solid #FFF;
+        color: #FFF;
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
