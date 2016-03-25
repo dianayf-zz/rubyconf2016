@@ -1,9 +1,9 @@
 %section.email-form
   .container
     .row
-      .col-xs-12.text-center
+      .col-xs-12.text-center.logo
         %img{src: asset_path("logo.png") }
-      .col-xs-12.text-center
+      .col-xs-12.text-center.principal-copy
         %h1.title1 DANCE WITH US, RUBYCONF COLOMBIA
         %h1.title2 MEDELLIN, COLOMBIA | SEPTEMBER, 2016
 
@@ -11,14 +11,13 @@
         = simple_form_for @user, url: {action: 'create'} do |f|
           .form-inputs
             %label Suscribe us for all the news about the event!
-            .btn-email= f.email_field :email, required: true, placeholder: "Write your mail address", class:"form-control"
-            =f.submit
-            %a{class: "btn btn-default", type: "submit", name: "submit"}
-              %span.glyphicon.glyphicon-send
-            
-              
+            .row
+              .col-xs-12
+                .input-email= f.email_field :email, required: true, placeholder: "Write your mail address", class:"form-control"
+                .btn-submit-email=f.submit
+
             %p#notice= notice
-      .col-xs-12.text-center
+      .col-xs-12.text-center.event-date
         %h1.title3 THE EVENT STARTS IN
         %ul.list-inline
           %li
